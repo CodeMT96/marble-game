@@ -1,5 +1,6 @@
 import "./style.css";
 import * as THREE from "three";
+import * as CANNON from "cannon-es"
 
 //Init three.js basics
 //Defining the Game via Class
@@ -19,7 +20,7 @@ class Game {
       2000
     );
     //Positioning the camera
-    this.camera.position.set(2, 2, 4);
+    this.camera.position.set(0, 5, 10);
     //Setting the look direction (quarternion) of the camera
     this.camera.lookAt(0, 0, 0);
     //Setting up the renderer
